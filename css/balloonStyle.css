@@ -1,0 +1,415 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+body {
+	font-family: Montserrat, sans-serif;
+}
+.hidden {
+	display: none;
+}
+.hidden2 {
+	visibility: hidden;
+}
+#ballooncanvas {
+	border: 1px solid black;
+	margin: 0;
+	background: url('../img/juli_jatek_hatter.png');
+}
+.ballooncanvasStart {
+	border: 1px solid black;
+	margin: 0;
+	width: "300px";
+	height: "500px";
+	background: url('../img/juli_jatek_hatter_BW.png');
+	line-height: 1.6rem;
+	font-stretch: semi-expanded;
+}
+#balloondiv {
+	margin: 0% 0%;
+	position: absolute;
+	height: 500px;
+	/**/
+}
+.balloonBackground {
+	background: url('../img/juli_jatek_hatter.png');
+	background-blend-mode: soft-light;
+	border: 1px solid black;
+	margin: 0;
+	height: 500px;
+	width: 300px;
+}
+.balloonBackground2 {
+	background: url('../img/juli_jatek_hatter_BW.png');
+	background-blend-mode: soft-light;
+	border: 1px solid black;
+	margin: 0;
+	height: 500px;
+	width: 300px;
+}
+#bGameContainer {
+	width: 100%;
+	height: 100vh;
+	margin: auto;
+	padding: auto;
+	background: #00c176; /*rgba(13,38,69,0.8);*/
+}
+
+.page1 {
+	z-index: 999;
+	position: relative;
+	background: #408a12;
+	border-radius: 15px;
+	width: 194px;
+	height: 48px;
+	/*left: 63px;*/
+	margin: auto;
+	padding-top: 12px;
+	margin-bottom: 1rem;
+}
+.page1 p {
+	font-style: normal;
+	font-weight: bold;
+	line-height: normal;
+	font-size: 20px;
+	text-align: center;
+	vertical-align: middle;
+	color: #ffffff;
+}
+.play {
+	margin-top: 130px;
+	background: #88c100;
+}
+.play a:hover {
+	text-decoration: none;
+}
+.instructions {
+	background: #ff003c;
+}
+.aboutUs {
+	background: #00c176;
+}
+.signOut {
+	background: #888;
+}
+
+/*INSTRUCTIONS*/
+#instPage {
+	text-align: center;
+	height: 70%;
+	padding: 5%;
+	height: 85%;
+	display: relative;
+}
+.fa-caret-right,
+.fa-caret-left {
+	padding: 0 0.6rem;
+}
+.page2,
+.page3 {
+	z-index: 998;
+	position: relative;
+	background: #408a12;
+	border-radius: 8px;
+	margin: auto;
+	padding-top: 12px;
+}
+.page2 p,
+.page3 p {
+	font-style: normal;
+	font-weight: bold;
+	line-height: normal;
+	font-size: 1rem;
+	text-align: center;
+	vertical-align: middle;
+	padding: 5px 0;
+}
+.instructions:hover,
+.play:hover,
+.aboutUs:hover,
+.achievements:hover,
+.signOut:hover {
+	cursor: pointer;
+}
+.instructions a:hover,
+.play a:hover,
+.aboutUs a:hover,
+.achievements a:hover {
+	cursor: pointer;
+	text-decoration: none;
+}
+.instructionsTitle,
+.aboutTitle {
+	margin-top: 10px;
+	background: #ff003c;
+	color: #fff;
+	width: 100%;
+	margin-bottom: 5px;
+	text-align: center;
+	padding: 0;
+}
+.instructionsTitle p {
+	margin: 0 0 10px 5px;
+	padding: 5px;
+}
+.instructionsContent {
+	background: #fff;
+	color: #444;
+	height: 80%;
+	padding: 5%;
+}
+.instructionsContent p {
+	line-height: 1.7rem;
+}
+#backInst,
+#forwardInst {
+	font-size: 24px;
+	cursor: pointer;
+}
+.achievements {
+	color: #fff;
+	background: #ff8a00;
+	font-size: 18px;
+}
+#backArrow {
+	font-size: 1.5rem;
+	color: rgba(50, 50, 50, 0.8);
+	margin: 5px;
+	padding-left: 10px;
+}
+#backArrow:hover,
+#aboutUs:hover {
+	cursor: pointer;
+}
+.myForwardBtn {
+	float: right;
+	font-size: 1.1rem;
+}
+.myBackBtn {
+	float: left;
+	font-size: 1.1rem;
+}
+.page3 a {
+	color: white;
+}
+.page3 a:hover {
+	color: rgba(0, 100, 50, 0.8);
+}
+/*start page*/
+.saveThe {
+	color: #00c176;
+}
+.balloonLabel {
+	color: #ff003c;
+}
+.saveThe,
+.balloonLabel {
+	font-weight: 700;
+}
+.participate {
+	font-size: 1.3rem;
+	font-weight: 600;
+	position: relative;
+	top: -50px;
+}
+.participate a {
+	color: #fff;
+	text-decoration: none;
+}
+/*Sign In page*/
+.my-form-input {
+	background: #fff;
+	color: #888;
+}
+.form-group p,
+.form-group label,
+.form-group span {
+	font-weight: 700 !important;
+}
+.signInForm {
+	height: 100%;
+	width: 300px;
+	margin: auto;
+}
+.signInBtn {
+	background: #88c100;
+}
+.registerBtn {
+	background: #ff8a00;
+}
+.registerBtn:hover {
+	color: #fff;
+}
+.signInBtn,
+.registerBtn {
+	color: white;
+	font-weight: 600;
+	font-size: 1.3rem;
+}
+.registerBtn a {
+	color: #fff;
+	text-decoration: none;
+}
+
+/*Achievements*/
+.achieve {
+	border-radius: 8px;
+	margin-bottom: 1rem;
+	border: 1px solid #888;
+	box-shadow: #888 1px 1px 1px;
+	background: whitesmoke;
+}
+.achieve p {
+	color: #444;
+	font-size: 1.2rem;
+}
+.achieve span {
+	font-weight: 700;
+	color: #ff8a00;
+}
+.achieveTitle {
+	border-radius: 8px;
+	margin: 0.8rem;
+}
+.achieveIcon {
+	display: block;
+	text-justify: center;
+	color: #888;
+	font-size: 2rem;
+	padding-top: 7px;
+}
+/*Calibration*/
+.calibTitle {
+	background: #00c176;
+}
+.calibInst {
+	margin-bottom: 0.5rem;
+	border: 1px solid #777;
+	background: whitesmoke;
+	padding: 10px;
+}
+.calibInst p {
+	color: #444;
+	font-weight: 600;
+}
+.ready {
+	background: #ff003c;
+}
+.ready,
+.calibTitle {
+	color: #fff;
+	font-size: 1rem;
+	font-weight: 700;
+	text-align: center;
+	vertical-align: middle;
+	margin: 8px 0;
+	padding: 5px 0;
+}
+.ready a {
+	color: white;
+	text-decoration: none;
+}
+.calibTitle,
+.calibInst,
+.ready {
+	border-radius: 8px;
+	box-shadow: #888 1px 1px 2px;
+}
+/*Practice*/
+#feedbackSigns {
+	height: 45%;
+}
+#balloondivStart h5 {
+	line-height: 2rem;
+	font-weight: 700;
+}
+.trySample {
+	cursor: pointer;
+}
+
+/*Feedback about performance*/
+.fbBox {
+	border-radius: 8px;
+	position: absolute;
+	margin-top: 250px;
+	width: 350px;
+	border: 1px solid #444;
+	box-shadow: 1px 1px 1px #777;
+}
+#feedbackMsg {
+	line-height: 2rem;
+}
+/*Questionnaire*/
+.s1,
+.s2,
+.s3,
+.s4,
+.s5,
+.s6 {
+	font-size: 2rem;
+	font-weight: 700;
+	color: #fff;
+	padding: 0.5rem;
+	min-width: 35px;
+	cursor: pointer;
+}
+.s1 {
+	background: #88c100;
+}
+.s2 {
+	background: #00c176;
+}
+.s3 {
+	background: #f1db19;
+}
+.s4 {
+	background: #fabe28;
+}
+.s5 {
+	background: #ff8a00;
+}
+.s6 {
+	background: #ff003c;
+}
+.question {
+	border-radius: 8px;
+	box-shadow: #888 1px 1px 2px;
+	margin: 1rem 0;
+	border: 1px solid #888;
+	background: whitesmoke;
+	padding: 10px;
+	font-weight: 600;
+	color: #777;
+}
+.scale {
+	padding: 15px;
+}
+.qRespBtn {
+	cursor: pointer;
+}
+.thanksForQs {
+	height: 100%;
+}
+/*About*/
+.logoIL {
+	width: 100px;
+	height: 100px;
+	margin-top: 1rem;
+	padding: 5px;
+	background: rgba(255, 255, 255, 0.5);
+	border-radius: 8px;
+}
+/*practice*/
+.rightAns,
+.wrongAns {
+	width: 110px;
+	height: 110px;
+	font-size: 4rem;
+	vertical-align: middle;
+	border-radius: 50%;
+	color: #fff;
+	border: 4px solid #fff;
+}
+.trySample {
+	border-radius: 8px;
+	border: 1px solid #444;
+	box-shadow: 2px 2px 2px #888;
+}
