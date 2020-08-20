@@ -38,6 +38,7 @@
             var session_value = '<?php echo $session_value;?>'; 
         </script>
         <script src="../js/script.js"></script>
+        <?php include 'signOut.php' ?>
         
 </body>
 </html>

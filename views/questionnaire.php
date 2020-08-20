@@ -39,6 +39,7 @@
             var measure_id = '<?php echo $measure_id; ?>';
         </script>
         <script src="../js/questionnaire.js" type="text/javascript"></script>
+        <?php include 'signOut.php' ?>
 </body>
 </html>
 

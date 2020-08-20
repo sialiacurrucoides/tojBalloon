@@ -1,4 +1,4 @@
-window.onload = function() {
+window.onload = function () {
 	var page1elems = document.getElementsByClassName('page1');
 	var page2elems = document.getElementsByClassName('page2');
 	var page3elems = document.getElementsByClassName('page3');
@@ -10,7 +10,7 @@ window.onload = function() {
 		'<p>Press <i class="fa fa-caret-left"></i> when you hear the sound propagating from left to right.</p>' +
 		'<p>Press <i class="fa fa-caret-right"></i> when you hear the sound propagating from right to left.</p>';
 
-	document.getElementsByClassName('instructions')[0].addEventListener('click', function(event) {
+	document.getElementsByClassName('instructions')[0].addEventListener('click', function (event) {
 		//console.log('page1elems');
 		var forwardInst = document.getElementById('forwardInst');
 		var backInst = document.getElementById('backInst');
@@ -18,7 +18,7 @@ window.onload = function() {
 		var dir = document.getElementById('directions');
 		dir.classList.remove('hidden2');
 
-		forwardInst.addEventListener('click', function() {
+		forwardInst.addEventListener('click', function () {
 			instructions1.innerHTML =
 				'<p>One round is over after 8 errors.</p>' +
 				'<p>You can start the game by clicking the balloon in the middle of the screen.</p><p class="text-center"><img src="../img/juli_jatek_lufi_GO.png"></p>';
@@ -26,7 +26,7 @@ window.onload = function() {
 			forwardInst.classList.add('hidden2');
 			pageC.innerHTML = ' 2';
 		});
-		backInst.addEventListener('click', function() {
+		backInst.addEventListener('click', function () {
 			console.log('I was clicked!');
 			instructions1.innerHTML = instPage1;
 			forwardInst.classList.remove('hidden2');
@@ -43,13 +43,13 @@ window.onload = function() {
 		backArrow.classList.remove('hidden');
 	});
 
-	document.getElementsByClassName('play')[0].addEventListener('click', function(event) {
+	document.getElementsByClassName('play')[0].addEventListener('click', function (event) {
 		for (var i = 0; i < page1elems.length; i++) {
 			page1elems[i].classList.add('hidden');
 		}
 	});
 
-	backArrow.addEventListener('click', function(event) {
+	backArrow.addEventListener('click', function (event) {
 		for (var j = 0; j < page2elems.length; j++) {
 			page2elems[j].classList.add('hidden');
 		}
@@ -65,9 +65,9 @@ window.onload = function() {
 		backArrow.classList.add('hidden');
 	});
 
-	signOut[0].addEventListener('click', function() {
+	signOut[0].addEventListener('click', function () {
 		console.log('I was clicked!');
-		window.location.href = './balloonStart.php';
+		window.location.href = './';
 	});
 
 	/*     aboutUs.addEventListener('click',function(){

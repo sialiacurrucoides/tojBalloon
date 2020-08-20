@@ -1,4 +1,4 @@
-window.onload = function() {
+window.onload = function () {
 	let questions_eng = [
 		'On a scale of 1 to 6, your brain got tired:',
 		'On a scale of 1 to 6, the background was noisy:',
@@ -40,16 +40,16 @@ window.onload = function() {
 					d.getSeconds()
 			}
 		});
-		request.done(function(msg) {
+		request.done(function (msg) {
 			console.log('Response: ' + msg);
 		});
-		request.fail(function(jqXHR, textStatus) {
+		request.fail(function (jqXHR, textStatus) {
 			console.log('Request failed: ' + textStatus);
 		});
 	}
 
-	respBtns.each(function() {
-		$(this).on().click(function() {
+	respBtns.each(function () {
+		$(this).on().click(function () {
 			if (qNum <= questions_eng.length) {
 				qResponses[qNum - 1] = $(this).text();
 				qCounter.text(qNum + 1);

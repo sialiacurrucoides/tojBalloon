@@ -2,7 +2,7 @@
     session_start();
     if (!isset($_SESSION["userID"])) header("Location: balloonStart.php");
     $userID = $_SESSION["userID"];
-    require_once '../../functions.php';
+    require_once '../../../functions.php';
     $longestRun = isset($_SESSION["userID"]) ? getLongestRun($userID): 'NaN';
     $bestThreshold = isset($_SESSION["userID"]) ? getSmallestThreshold($userID): 'NaN';
     $betterInarow = isset($_SESSION["userID"]) ? getBetterInaRow($userID): 'NaN';
@@ -47,6 +47,6 @@
             </div>
         </div> 
     </div>
-
+    <?php include 'signOut.php' ?>
 </body>
 </html>

@@ -1,5 +1,5 @@
 <?php 
-require_once '../../functions.php';
+require_once '../../../functions.php';
 if(isset($_POST['email'],$_POST['password'])){
     $signedIn = loginUser($_POST['email'],$_POST['password']);
     if ($signedIn != false){
@@ -27,7 +27,7 @@ include 'balloonHeader.php';
                                     <input type="password" class="form-control" id="passwordIn" placeholder="Password*" name="password" required>
                                 </div>
                                 <button type="submit" class="btn btn-success btn-block signInBtn">SIGN IN</button>
-                                <a href="../../register.php" class="btn btn-warning btn-block registerBtn">REGISTER</a>
+                                <a href="../../../register.php" class="btn btn-warning btn-block registerBtn">REGISTER</a>
                             </form>
                         </div>
                     </div>

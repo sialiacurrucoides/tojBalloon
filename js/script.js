@@ -9,10 +9,10 @@ function sendStats(threshold, gameTime, numClicks, regTime) {
 			regTime: regTime
 		}
 	});
-	request.done(function(msg) {
+	request.done(function (msg) {
 		console.log('Response: ' + msg);
 	});
-	request.fail(function(jqXHR, textStatus) {
+	request.fail(function (jqXHR, textStatus) {
 		console.log('Request failed: ' + textStatus);
 	});
 }
@@ -75,14 +75,14 @@ function playGame(balloon, minballoon) {
 
 	//functions
 
-	playSound = function(correct, whichSample) {
+	playSound = function (correct, whichSample) {
 		correctAns = correct;
 		audio.src = '../mtojsounds/' + whichSample + myIsis[currentIsiInx] + '.wav';
 		audio.loop = false;
 		audio.play();
 	};
 	//play the next sound sample as a function of the actual ISI step
-	playNextSound = function() {
+	playNextSound = function () {
 		r = Math.round(Math.random());
 		if (r == 0) {
 			playSound(1, sampleNameLR);
@@ -91,7 +91,7 @@ function playGame(balloon, minballoon) {
 		}
 	};
 	//evaluate the last order judgment of the participant
-	evalChange = function(myans) {
+	evalChange = function (myans) {
 		++clickNr;
 		if (startTime === 0) {
 			var d = new Date();
@@ -202,7 +202,7 @@ function playGame(balloon, minballoon) {
 		}
 	}
 	// the game starts by a click on the GO balloon
-	ctx.canvas.addEventListener('click', function(event) {
+	ctx.canvas.addEventListener('click', function (event) {
 		mouseX = event.clientX - BBoffsetX;
 		mouseY = event.clientY - BBoffsetY;
 		//after the first click the balloon loses its 'GO' label
@@ -231,7 +231,7 @@ function playGame(balloon, minballoon) {
 		}
 	});
 
-	document.addEventListener('keydown', function(event) {
+	document.addEventListener('keydown', function (event) {
 		key_press = String.fromCharCode(event.keyCode);
 		//alert(event.keyCode +" " +key_press); //37 <-, 39 ->
 		if (finished == 0) {
